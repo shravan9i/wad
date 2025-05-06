@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<input type="text" #name placeholder="Name">
+<input type="email" #email placeholder="Email">
+<input type="text" #contact placeholder="Contact">
+<input type="text" #address placeholder="Address">
+
+<button (click)="getValue(name.value, email.value, contact.value, address.value)">Submit</button>
+
+<p>Name: {{ displayname }}</p>
+<p>Email: {{ displayemail }}</p>
+<p>Contact: {{ displaycontact }}</p>
+<p>Address: {{ displayaddresses }}</p>
